@@ -1,0 +1,75 @@
+@mixin center-flex {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+body {
+
+    @include center-flex;
+   
+
+    
+
+    main {
+
+        width: min(95%, 375px);
+
+        .back-btn {
+
+            background-color: #151515;
+            display: block;
+            width: 208px;
+            height: 72px;
+
+            div {
+
+                position: absolute;
+                background-color: #D5966C;
+                width: 56px;
+                height: 72px;
+                font-size: 10px;
+                @include center-flex;
+
+                
+                
+            }
+        }
+
+        article{
+
+            background-color: #151515;
+            width: 375px;
+            height: 493px;
+
+            h1 {
+
+                font-family: "Big Shoulders Display", sans-serif;
+                font-size: 3.125rem;
+                line-height: 45px;
+                color: white;
+            }
+
+            h2 {
+
+                font-family: "Big Shoulders Display", sans-serif;
+                font-size: 2rem;
+                color: #D5966C;
+
+            }
+
+            p {
+                font-size: 1.125rem;
+                color: white;
+                font-weight: 200;
+
+            }
+
+
+        }
+    }
+
+}

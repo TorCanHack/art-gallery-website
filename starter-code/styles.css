@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main {
+  width: min(95%, 375px);
+}
+body main .back-btn {
+  background-color: #151515;
+  display: block;
+  width: 208px;
+  height: 72px;
+}
+body main .back-btn div {
+  position: absolute;
+  background-color: #D5966C;
+  width: 56px;
+  height: 72px;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main article {
+  background-color: #151515;
+  width: 375px;
+  height: 493px;
+}
+body main article h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 3.125rem;
+  line-height: 45px;
+  color: white;
+}
+body main article h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 2rem;
+  color: #D5966C;
+}
+body main article p {
+  font-size: 1.125rem;
+  color: white;
+  font-weight: 200;
+}/*# sourceMappingURL=styles.css.map */
