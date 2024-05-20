@@ -7,6 +7,10 @@
 
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
 
     @include center-flex;
@@ -18,32 +22,198 @@ body {
 
         width: min(95%, 375px);
 
-        .back-btn {
+        /* index.html */
 
-            background-color: #151515;
-            display: block;
-            width: 208px;
-            height: 72px;
+
+        .introduction {
+
+            padding: 1rem;
+
+            .hero-mobile {
+                height: 240px;
+            }
+
+            h1 {
+                font-size: 3.75rem;
+                font-family: "Big Shoulders Display", sans-serif;
+                line-height: 55px;
+                color: #151515;
+            }
+
+            P {
+                font-size: 1.125rem;
+                font-family: "Outfit", sans-serif;
+                font-weight: 200;
+                line-height: 28px;
+            }
+
+            .go-to-location-page-btn {
+
+                background-color: #151515;
+                color: white;
+                display: block;
+                width: 260px;
+                height: 72px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 1.25rem;
+                font-family: "Big Shoulders Display", sans-serif;
+                font-weight: 900;
+                border: none;
+                margin-bottom: 4rem;
+
+                div {
+
+                
+                    background-color: #D5966C;
+                    width: 56px;
+                    height: 72px;
+                    font-size: 10px;
+                    @include center-flex;
+                    position: relative;
+                    left: 4px;
+                    
+                    
+                }
+
+                p {
+                    position: relative;
+                    left: 2rem;
+                }
+
+            }
+
+
+        }
+
+        .gallery {
+
+            padding: 1rem;
+
+            .grid1 {
+
+                width: 343px;
+                height: 320px;
+               
+            }
+
+            .grid2 {
+                width: 343px;
+                height: 480px;
+                margin-bottom: 1rem;
+            }
+
+            .grid3 {
+                width: 343px;
+                height: 200px;
+                margin-bottom: 1rem;
+            }
+
+            h2 {
+                font-size: 3.125rem;
+                font-family: "Big Shoulders Display", sans-serif;
+                line-height: 45px;
+                color: #151515;
+            }
+
+            P {
+                font-size: 1.125rem;
+                font-weight: 200;
+                font-family: "Outfit", sans-serif;
+                line-height: 28px;
+            }
 
             div {
 
-                position: absolute;
+                width: 343px;
+                height: 293px;
+                background-color: #151515;
+                padding:  1rem 2rem;
+                margin-bottom: 4rem;
+               
+
+                h3 {
+
+                    font-size: 3.125rem;
+                    font-family: "Big Shoulders Display", sans-serif;
+                    line-height: 45px;
+                    color: white;
+                    margin-top: 1.5rem;
+                }
+
+                p {
+                    color: white;
+                }
+
+            }
+        }
+
+        /* location.html */
+
+        .back-to-home-btn {
+
+            background-color: #151515;
+            color: white;
+            display: block;
+            width: 208px;
+            height: 72px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.25rem;
+            font-family: "Big Shoulders Display", sans-serif;
+            font-weight: 900;
+            border: none;
+            position: relative;
+            top: 4.5rem;
+            z-index: 100;
+            
+
+            p {
+                position: relative;
+                right: 1rem;
+            }
+            
+
+            div {
+
+                
                 background-color: #D5966C;
                 width: 56px;
                 height: 72px;
                 font-size: 10px;
                 @include center-flex;
-
+                position: relative;
+                right: 7px;
                 
+                
+                
+
                 
             }
         }
 
-        article{
+        .back-btn:hover {
+            cursor: pointer;
+        }
+
+
+        #map {
+            width: 375px;
+            height: 500px;
+            background-color: gray;
+            z-index: 0;
+        }
+
+        .location{
 
             background-color: #151515;
             width: 375px;
             height: 493px;
+            padding: 1rem;
+
+           
 
             h1 {
 
@@ -64,11 +234,77 @@ body {
             p {
                 font-size: 1.125rem;
                 color: white;
-                font-weight: 200;
-
+                font-weight: 100;
+                font-family: "Outfit", sans-serif;
+                
             }
 
 
+        }
+    }
+
+/* index.html */
+    .footer-index {
+        width: min(95%, 375px);
+        height: 336px;
+        background-color: #151515;
+        padding: 3rem 3rem;
+
+        h3 {
+            font-family: "Big Shoulders Display", sans-serif;
+            color: white;
+
+        }
+
+        p {
+            margin-top: 2rem;
+            font-family: "Outfit", sans-serif;
+            font-weight: 200;
+            color: white;
+        }
+
+        .socials {
+
+            margin-top: 4rem;
+
+            svg {
+                
+                margin-left: 1rem;
+                
+            }
+        }
+
+    }
+
+     /* location.html */
+    .footer-location {
+
+        width: min(95%, 375px);
+        height: 336px;
+        background-color: #D5966C;
+        padding: 3rem 3rem;
+
+        h3 {
+            font-family: "Big Shoulders Display", sans-serif;
+
+        }
+
+        p {
+            margin-top: 2rem;
+            font-family: "Outfit", sans-serif;
+            font-weight: 200;
+            color: #151515;
+        }
+
+        .socials {
+
+            margin-top: 4rem;
+            
+            svg {
+                
+                margin-left: 1rem;
+                
+            }
         }
     }
 

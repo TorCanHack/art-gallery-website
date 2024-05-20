@@ -1,20 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* index.html */
+  /* location.html */
 }
 body main {
   width: min(95%, 375px);
+  /* index.html */
+  /* location.html */
 }
-body main .back-btn {
+body main .introduction {
+  padding: 1rem;
+}
+body main .introduction .hero-mobile {
+  height: 240px;
+}
+body main .introduction h1 {
+  font-size: 3.75rem;
+  font-family: "Big Shoulders Display", sans-serif;
+  line-height: 55px;
+  color: #151515;
+}
+body main .introduction P {
+  font-size: 1.125rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 200;
+  line-height: 28px;
+}
+body main .introduction .go-to-location-page-btn {
   background-color: #151515;
+  color: white;
   display: block;
-  width: 208px;
+  width: 260px;
   height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.25rem;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 900;
+  border: none;
+  margin-bottom: 4rem;
 }
-body main .back-btn div {
-  position: absolute;
+body main .introduction .go-to-location-page-btn div {
   background-color: #D5966C;
   width: 56px;
   height: 72px;
@@ -23,25 +57,164 @@ body main .back-btn div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  left: 4px;
 }
-body main article {
+body main .introduction .go-to-location-page-btn p {
+  position: relative;
+  left: 2rem;
+}
+body main .gallery {
+  padding: 1rem;
+}
+body main .gallery .grid1 {
+  width: 343px;
+  height: 320px;
+}
+body main .gallery .grid2 {
+  width: 343px;
+  height: 480px;
+  margin-bottom: 1rem;
+}
+body main .gallery .grid3 {
+  width: 343px;
+  height: 200px;
+  margin-bottom: 1rem;
+}
+body main .gallery h2 {
+  font-size: 3.125rem;
+  font-family: "Big Shoulders Display", sans-serif;
+  line-height: 45px;
+  color: #151515;
+}
+body main .gallery P {
+  font-size: 1.125rem;
+  font-weight: 200;
+  font-family: "Outfit", sans-serif;
+  line-height: 28px;
+}
+body main .gallery div {
+  width: 343px;
+  height: 293px;
+  background-color: #151515;
+  padding: 1rem 2rem;
+  margin-bottom: 4rem;
+}
+body main .gallery div h3 {
+  font-size: 3.125rem;
+  font-family: "Big Shoulders Display", sans-serif;
+  line-height: 45px;
+  color: white;
+  margin-top: 1.5rem;
+}
+body main .gallery div p {
+  color: white;
+}
+body main .back-to-home-btn {
+  background-color: #151515;
+  color: white;
+  display: block;
+  width: 208px;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.25rem;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 900;
+  border: none;
+  position: relative;
+  top: 4.5rem;
+  z-index: 100;
+}
+body main .back-to-home-btn p {
+  position: relative;
+  right: 1rem;
+}
+body main .back-to-home-btn div {
+  background-color: #D5966C;
+  width: 56px;
+  height: 72px;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 7px;
+}
+body main .back-btn:hover {
+  cursor: pointer;
+}
+body main #map {
+  width: 375px;
+  height: 500px;
+  background-color: gray;
+  z-index: 0;
+}
+body main .location {
   background-color: #151515;
   width: 375px;
   height: 493px;
+  padding: 1rem;
 }
-body main article h1 {
+body main .location h1 {
   font-family: "Big Shoulders Display", sans-serif;
   font-size: 3.125rem;
   line-height: 45px;
   color: white;
 }
-body main article h2 {
+body main .location h2 {
   font-family: "Big Shoulders Display", sans-serif;
   font-size: 2rem;
   color: #D5966C;
 }
-body main article p {
+body main .location p {
   font-size: 1.125rem;
   color: white;
+  font-weight: 100;
+  font-family: "Outfit", sans-serif;
+}
+body .footer-index {
+  width: min(95%, 375px);
+  height: 336px;
+  background-color: #151515;
+  padding: 3rem 3rem;
+}
+body .footer-index h3 {
+  font-family: "Big Shoulders Display", sans-serif;
+  color: white;
+}
+body .footer-index p {
+  margin-top: 2rem;
+  font-family: "Outfit", sans-serif;
   font-weight: 200;
+  color: white;
+}
+body .footer-index .socials {
+  margin-top: 4rem;
+}
+body .footer-index .socials svg {
+  margin-left: 1rem;
+}
+body .footer-location {
+  width: min(95%, 375px);
+  height: 336px;
+  background-color: #D5966C;
+  padding: 3rem 3rem;
+}
+body .footer-location h3 {
+  font-family: "Big Shoulders Display", sans-serif;
+}
+body .footer-location p {
+  margin-top: 2rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 200;
+  color: #151515;
+}
+body .footer-location .socials {
+  margin-top: 4rem;
+}
+body .footer-location .socials svg {
+  margin-left: 1rem;
 }/*# sourceMappingURL=styles.css.map */
