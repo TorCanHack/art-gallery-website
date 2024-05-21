@@ -122,6 +122,12 @@ body {
 
             }
 
+            .grid1-desktop, .grid2-desktop, .grid3-desktop {
+
+                display: none;
+
+            }
+
             .day-at-gallery-box {
 
                 h2 {
@@ -181,7 +187,6 @@ body {
             font-weight: 900;
             border: none;
             position: relative;
-            top: 4.5rem;
             z-index: 100;
             
 
@@ -219,6 +224,7 @@ body {
             height: 500px;
             background-color: gray;
             z-index: 0;
+            margin-top: -5rem;
         }
 
         .location{
@@ -332,6 +338,11 @@ body {
             
             .introduction {
     
+                .blackbox {
+
+                    display: none;
+                }
+
                 .hero-mobile {
                     display: none;
                 }
@@ -359,6 +370,7 @@ body {
                         font-size: 4.375rem;
                         line-height: 65px;
                         padding-right: 50px;
+                        
                     }
 
                     .intro-para {
@@ -413,7 +425,7 @@ body {
                     display: inline;
                     width: 398px;
                     height: 720px;
-                    grid-column: 1/2; /* Adjusted grid placement */
+                    grid-column: 1/2; 
                     grid-row: 2/3;
     
                 }
@@ -422,7 +434,7 @@ body {
                     display: inline;
                     width: 280px;
                     height: 313px;
-                    grid-column: 2; /* Adjusted grid placement */
+                    grid-column: 2;
                     grid-row: 2/3; 
                 }
 
@@ -431,7 +443,7 @@ body {
 
                     width: 280px;
                     height: 396px;
-                    grid-column: 2; /* Adjusted grid placement */
+                    grid-column: 2; 
                     grid-row: 3/4;
                     margin-top: -25.5rem;
                 }
@@ -524,6 +536,217 @@ body {
         }
 
 
+        
+    }
+
+    @media screen and (min-width: 1440px) {
+
+        main {
+
+            width: 1440px;
+
+            .introduction {
+
+                display: flex;
+                flex-direction: row;
+                width: 1275px;
+                height: 800px;
+                
+
+                .blackbox {
+
+                    display: block;
+                    width: 450px;
+                    height: 799px;
+                    border: 1px solid;
+                    background-color: #151515;
+                    margin: -1rem 0 0 -1rem;
+                }
+
+                .hero-tablet {
+                    display: none;
+                }
+
+                .hero-desktop {
+                    display: inline;
+                    width: 540px;
+                    height: 800px;
+                    margin-top: -1rem;
+                }
+
+                article {
+
+                    
+                    top: 14rem;
+                    left: -3rem;
+                    width: 350px;
+                   
+
+                    h1 {
+
+                        font-weight: 900;
+                        font-style: normal;
+                        font-size: 6rem;
+                        line-height: 88px;
+                        position: absolute;
+                        right: 36rem;
+                        bottom: 11rem;
+                        padding-right: 59px;
+                        width: 514px;
+                        background: linear-gradient(to right, white 56%, #151515 50%);
+                        background-clip: text;
+                        color: transparent;
+                                               
+                    }
+                    
+
+                    
+
+                    .intro-para {
+                        font-size: 1.375rem;
+                    }
+
+                    
+
+
+                }
+            }
+
+            .gallery {
+
+                width: 1110px;
+                height: 1150px;
+                margin: 1rem auto 8rem auto;
+                gap: 1.8rem;
+
+                .grid1-tablet, .grid2-tablet, .grid3-tablet {
+
+                    display: none;
+    
+                }
+
+
+                .grid1-desktop {
+                    display: inline;
+                    width: 635px;
+                    height: 400px;
+                    grid-column: 2;
+                    grid-row: 1/2;
+                    margin-left: -12rem;
+                }
+
+                .day-at-gallery-box{
+                    width: 350px;
+                    height: 280px;
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                     
+                    h2 {
+                        font-size: 3.75rem;
+                        line-height: 60px;
+                    }
+
+                    p {
+                        font-size: 1.375rem;
+                        line-height: 32px;
+                    }
+                }
+
+                .grid2-desktop{
+                    display: inline;
+                    width: 635px;
+                    height: 720px;
+                    grid-column: 1/2; /* Adjusted grid placement */
+                    grid-row: 2/3;
+    
+                }
+
+                .grid3-desktop {
+                    display: inline;
+                    width: 445px;
+                    height: 313px;
+                    grid-column: 2; /* Adjusted grid placement */
+                    grid-row: 2/3; 
+                }
+
+                .welcome-to-our-gallery-box {
+                    
+                    width: 445px;
+                    height: 377px;
+                    grid-column: 2; 
+                    grid-row: 3/4;
+                    margin-top: -25.5rem;
+
+                    h3 {
+                        font-size: 3.75rem;
+                        line-height: 60px;
+                    }
+
+                    p {
+
+                        font-size: 1.375rem;
+                        line-height: 32px;
+                    }
+                }
+
+
+            }
+
+            #map {
+                
+                width: 1440px;
+                height: 600px;
+            }
+
+            .location {
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                width: 1440px;
+                height: 548px;
+
+                h1 {
+
+                    font-size: 4.375rem;
+                    line-height: 70px;
+                    width: 350px;
+                    padding: 0 2rem;
+                    
+                }
+
+                div {
+
+                    width: 540px;
+                    position: relative;
+                    bottom: 2.5rem;
+
+                    h2 {
+                        font-size: 2.25rem;
+                    }
+
+                    p {
+                        font-size: 1.375rem;
+                    }
+                }
+            }
+
+        }
+
+        .footer-index, .footer-location {
+
+            width: 1440px;
+            height: 244px;
+
+            p {
+                font-weight: 200;
+                font-size: 1.125rem;
+                line-height: 28px;
+                width: 430px;
+                margin: 0 14rem 0 14rem;
+            }
+        }
         
     }
 
