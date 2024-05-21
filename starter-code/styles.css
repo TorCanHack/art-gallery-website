@@ -21,13 +21,19 @@ body main .introduction {
 body main .introduction .hero-mobile {
   height: 240px;
 }
+body main .introduction .hero-tablet {
+  display: none;
+}
+body main .introduction .hero-desktop {
+  display: none;
+}
 body main .introduction h1 {
   font-size: 3.75rem;
   font-family: "Big Shoulders Display", sans-serif;
   line-height: 55px;
   color: #151515;
 }
-body main .introduction P {
+body main .introduction .intro-para {
   font-size: 1.125rem;
   font-family: "Outfit", sans-serif;
   font-weight: 200;
@@ -67,47 +73,50 @@ body main .introduction .go-to-location-page-btn p {
 body main .gallery {
   padding: 1rem;
 }
-body main .gallery .grid1 {
+body main .gallery .grid1-mobile {
   width: 343px;
   height: 320px;
 }
-body main .gallery .grid2 {
+body main .gallery .grid2-mobile {
   width: 343px;
   height: 480px;
   margin-bottom: 1rem;
 }
-body main .gallery .grid3 {
+body main .gallery .grid3-mobile {
   width: 343px;
   height: 200px;
   margin-bottom: 1rem;
 }
-body main .gallery h2 {
+body main .gallery .grid1-tablet, body main .gallery .grid2-tablet, body main .gallery .grid3-tablet {
+  display: none;
+}
+body main .gallery .day-at-gallery-box h2 {
   font-size: 3.125rem;
   font-family: "Big Shoulders Display", sans-serif;
   line-height: 45px;
   color: #151515;
 }
-body main .gallery P {
+body main .gallery .day-at-gallery-box P {
   font-size: 1.125rem;
   font-weight: 200;
   font-family: "Outfit", sans-serif;
   line-height: 28px;
 }
-body main .gallery div {
+body main .gallery .welcome-to-our-gallery-box {
   width: 343px;
   height: 293px;
   background-color: #151515;
   padding: 1rem 2rem;
   margin-bottom: 4rem;
 }
-body main .gallery div h3 {
+body main .gallery .welcome-to-our-gallery-box h3 {
   font-size: 3.125rem;
   font-family: "Big Shoulders Display", sans-serif;
   line-height: 45px;
   color: white;
   margin-top: 1.5rem;
 }
-body main .gallery div p {
+body main .gallery .welcome-to-our-gallery-box p {
   color: white;
 }
 body main .back-to-home-btn {
@@ -217,4 +226,150 @@ body .footer-location .socials {
 }
 body .footer-location .socials svg {
   margin-left: 1rem;
+}
+@media screen and (min-width: 768px) {
+  body main {
+    width: 768px;
+  }
+  body main .introduction .hero-mobile {
+    display: none;
+  }
+  body main .introduction .hero-tablet {
+    margin: -1rem 0 0 -1rem;
+    display: block;
+    width: 437px;
+    height: 700px;
+  }
+  body main .introduction article {
+    position: relative;
+    bottom: 34rem;
+    left: 23rem;
+    width: 339px;
+    height: 410px;
+  }
+  body main .introduction article h1 {
+    margin-top: 1px;
+    font-size: 4.375rem;
+    line-height: 65px;
+    padding-right: 50px;
+  }
+  body main .introduction article .intro-para {
+    margin-top: -2rem;
+  }
+  body main .introduction article .go-to-location-page-btn {
+    margin-top: 3rem;
+  }
+  body main .gallery {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    padding: 0;
+    width: 689px;
+    height: 1131px;
+    margin: -20rem auto 8rem auto;
+    gap: 10px;
+  }
+  body main .gallery .grid1-mobile, body main .gallery .grid2-mobile, body main .gallery .grid3-mobile {
+    display: none;
+  }
+  body main .gallery .grid1-tablet {
+    display: inline;
+    width: 398px;
+    height: 400px;
+    grid-column: 2;
+    grid-row: 1/2;
+    margin-left: -7.4rem;
+  }
+  body main .gallery .day-at-gallery-box {
+    width: 223px;
+    height: 299px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  body main .gallery .grid2-tablet {
+    display: inline;
+    width: 398px;
+    height: 720px;
+    grid-column: 1/2; /* Adjusted grid placement */
+    grid-row: 2/3;
+  }
+  body main .gallery .grid3-tablet {
+    display: inline;
+    width: 280px;
+    height: 313px;
+    grid-column: 2; /* Adjusted grid placement */
+    grid-row: 2/3;
+  }
+  body main .gallery .welcome-to-our-gallery-box {
+    width: 280px;
+    height: 396px;
+    grid-column: 2; /* Adjusted grid placement */
+    grid-row: 3/4;
+    margin-top: -25.5rem;
+  }
+  body main #map {
+    width: 768px;
+    height: 600px;
+  }
+  body main .location {
+    display: flex;
+    flex-direction: row;
+    width: 768px;
+    height: 436px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body main .location h1 {
+    font-size: 3.438rem;
+    position: relative;
+    bottom: 5rem;
+  }
+  body main .location div {
+    width: 398px;
+    height: 268px;
+    padding: 0 2rem;
+  }
+  body main .location div p {
+    font-weight: 100;
+  }
+  body .footer-index {
+    width: 768px;
+    height: 216px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  body .footer-index .light-logo {
+    position: relative;
+    bottom: 1rem;
+  }
+  body .footer-index p {
+    width: 281px;
+    margin: 0 4rem 0 4rem;
+  }
+  body .footer-index div {
+    position: relative;
+    bottom: 3.5rem;
+  }
+  body .footer-location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 768px;
+    height: 216px;
+  }
+  body .footer-location .dark-logo {
+    position: relative;
+    bottom: 1rem;
+  }
+  body .footer-location p {
+    width: 281px;
+    margin: 0 4rem 0 4rem;
+  }
+  body .footer-location .socials {
+    position: relative;
+    bottom: 3.5rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
