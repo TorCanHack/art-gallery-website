@@ -6,7 +6,7 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 L.control.zoom({
-    position: 'bottomright' // Change this to 'topleft', 'topright', or 'bottomleft' as desired
+    position: 'bottomright' 
 }).addTo(map);
 
 var kingStreetMarker = L.marker([41.48224, -71.31111]).addTo(map);
